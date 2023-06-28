@@ -8,6 +8,9 @@
             <Comment offline label="Comment" v-model="item.comment" :editMode="false" :key="false" @change="change" />
             <Likes offline label="Like" v-model="item.like" :editMode="false" :key="false" @change="change" />
             <Tags offline label="Tag" v-model="item.tag" :editMode="false" :key="false" @change="change" />
+            <Photo offline label="Photo" v-model="item.photo" :editMode="false" @change="change" />
+            <Address offline label="Address" v-model="item.address" :editMode="false" @change="change" />
+            <Weather offline label="Weather" v-model="item.weather" :editMode="false" :key="false" @change="change" />
         </v-card-text>
 
         <v-card-actions>

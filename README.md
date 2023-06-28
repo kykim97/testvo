@@ -32,7 +32,7 @@ mvn spring-boot:run
 ## Test by API
 - testvo
 ```
- http :8088/tests id="id" comment="comment" like="like" tag="tag" 
+ http :8088/tests id="id" comment="comment" like="like" tag="tag" photo="photo" address="address" weather="weather" 
 ```
 
 

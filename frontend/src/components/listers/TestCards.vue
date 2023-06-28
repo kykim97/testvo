@@ -71,6 +71,9 @@
                 'comment': {},
                 'like': {},
                 'tag': {},
+                'photo': {},
+                'address': {},
+                'weather': {},
             }
         },
         methods:{

@@ -23,6 +23,15 @@
                             <v-list-item-subtitle>
                                 Tag :  {{item.tag }}
                             </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                Photo :  {{item.photo }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                Address :  {{item.address }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                Weather :  {{item.weather }}
+                            </v-list-item-subtitle>
                         </v-list-item-content>
 
                         <v-list-item-action>
@@ -74,6 +83,12 @@
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
                     obj['id'] = arr[4]; 
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
                     

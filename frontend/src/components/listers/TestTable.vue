@@ -70,6 +70,9 @@
                     { text: "comment", value: "comment" },
                     { text: "like", value: "like" },
                     { text: "tag", value: "tag" },
+                    { text: "photo", value: "photo" },
+                    { text: "address", value: "address" },
+                    { text: "weather", value: "weather" },
                 ],
             test : [],
             newValue: {},
@@ -90,6 +93,9 @@
                 'comment': {},
                 'like': {},
                 'tag': {},
+                'photo': {},
+                'address': {},
+                'weather': {},
             }
         },
         methods: {

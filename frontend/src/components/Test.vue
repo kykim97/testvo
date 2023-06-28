@@ -20,6 +20,9 @@
             <Comment offline label="Comment" v-model="value.comment" :editMode="editMode" @change="change"/>
             <Likes offline label="Like" v-model="value.like" :editMode="editMode" @change="change"/>
             <Tags offline label="Tag" v-model="value.tag" :editMode="editMode" @change="change"/>
+            <Photo offline label="Photo" v-model="value.photo" :editMode="editMode" @change="change"/>
+            <Address offline label="Address" v-model="value.address" :editMode="editMode" @change="change"/>
+            <Weather offline label="Weather" v-model="value.weather" :editMode="editMode" @change="change"/>
         </v-card-text>
 
         <v-card-actions>
@@ -38,7 +41,7 @@
                     @click="save"
                     v-else
             >
-                Save
+                Upload
             </v-btn>
             <v-btn
                     color="deep-purple lighten-2"
@@ -79,10 +82,16 @@
 <script>
     const axios = require('axios').default;
 
+    import Photo from './vo/Photo.vue';
+    import Address from './vo/Address.vue';
+    import Weather from './vo/Weather.vue';
 
     export default {
         name: 'Test',
         components:{
+            Photo,
+            Address,
+            Weather,
         },
         props: {
             value: [Object, String, Number, Boolean, Array],
